@@ -2,7 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
-import { Mic, Translate, Play } from 'lucide-react';
+import { Mic, Languages, Play } from 'lucide-react';
 
 type ButtonVariant = 'record' | 'translate' | 'convert';
 
@@ -29,7 +29,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({
         };
       case 'translate':
         return {
-          icon: <Translate className="mr-2 h-4 w-4" />,
+          icon: <Languages className="mr-2 h-4 w-4" />,
           text: 'Translate',
           className: 'bg-translate hover:bg-translate-hover text-white',
         };
